@@ -15,7 +15,6 @@ const MergedData = () => {
                 const saplingsMaster = saplingsMasterResponse.data;
                 const saplingInwardOutward = saplingInwardOutwardResponse.data;
 
-                // Extract sapling names from saplings_master.json
                 const saplingNames = saplingsMaster.map(sapling => sapling.saplings_name);
                 setSaplingNames(saplingNames);
 
@@ -24,7 +23,6 @@ const MergedData = () => {
                     return acc;
                 }, {});
 
-                // Group data by warehouse
                 const mergedDataByWarehouse = saplingInwardOutward.sapling_stock_res_by_warehouse.reduce((acc, stock) => {
                     if (!acc[stock.warehouse_name]) {
                         acc[stock.warehouse_name] = { warehouse_code: stock.warehouse_code, saplings: {} };
