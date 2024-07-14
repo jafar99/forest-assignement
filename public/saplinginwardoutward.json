@@ -1,0 +1,332 @@
+{
+    "sapling_stock_res_by_warehouse": [
+        {
+            "sapling_item_code": "S00001",
+            "sapling_item_name": "Ain",
+            "warehouse_name": "Dhawalgaon-Shinde Suresh Baban",
+            "warehouse_code": "W0001",
+            "sum_sapling_inward": "5000",
+            "sum_sapling_outward": "560",
+            "sapling_balance_stock": "4440"
+        },
+        {
+            "sapling_item_code": "S00002",
+            "sapling_item_name": "Arjun",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "10",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00004",
+            "sapling_item_name": "Awala (Grafted)",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "20",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00005",
+            "sapling_item_name": "Babhul",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "300",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00007",
+            "sapling_item_name": "Bakul",
+            "warehouse_name": "Dhawalgaon-Shinde Suresh Baban",
+            "warehouse_code": "W0001",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "160",
+            "sapling_balance_stock": "440"
+        },
+        {
+            "sapling_item_code": "S00008",
+            "sapling_item_name": "Bamboo",
+            "warehouse_name": "Dhawalgaon-Shinde Suresh Baban",
+            "warehouse_code": "W0001",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "360",
+            "sapling_balance_stock": "140"
+        },
+        {
+            "sapling_item_code": "S00010",
+            "sapling_item_name": "Bhendi",
+            "warehouse_name": "Karjat-Navnath Ragunath Shinde",
+            "warehouse_code": "W0003",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00012",
+            "sapling_item_name": "Chikku",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "63",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00013",
+            "sapling_item_name": "Chincha",
+            "warehouse_name": "Dhawalgaon-Shinde Suresh Baban",
+            "warehouse_code": "W0001",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "50",
+            "sapling_balance_stock": "450"
+        },
+        {
+            "sapling_item_code": "S00013",
+            "sapling_item_name": "Chincha",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "59",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00014",
+            "sapling_item_name": "Chincha (Grafted)",
+            "warehouse_name": "Karjat-Navnath Ragunath Shinde",
+            "warehouse_code": "W0003",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00014",
+            "sapling_item_name": "Chincha (Grafted)",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "50",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00015",
+            "sapling_item_name": "Dalimb",
+            "warehouse_name": "Karjat-Navnath Ragunath Shinde",
+            "warehouse_code": "W0003",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00016",
+            "sapling_item_name": "Drumstick (Koimb)",
+            "warehouse_name": "Dhawalgaon-Shinde Suresh Baban",
+            "warehouse_code": "W0001",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "150",
+            "sapling_balance_stock": "450"
+        },
+        {
+            "sapling_item_code": "S00016",
+            "sapling_item_name": "Drumstick (Koimb)",
+            "warehouse_name": "Karjat-Navnath Ragunath Shinde",
+            "warehouse_code": "W0003",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00016",
+            "sapling_item_name": "Drumstick (Koimb)",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00017",
+            "sapling_item_name": "Drumstick (ODC)",
+            "warehouse_name": "Karjat-Navnath Ragunath Shinde",
+            "warehouse_code": "W0003",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00017",
+            "sapling_item_name": "Drumstick (ODC)",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "100",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00018",
+            "sapling_item_name": "Jamun",
+            "warehouse_name": "Dhawalgaon-Shinde Suresh Baban",
+            "warehouse_code": "W0001",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "250",
+            "sapling_balance_stock": "250"
+        },
+        {
+            "sapling_item_code": "S00021",
+            "sapling_item_name": "Kaduneem",
+            "warehouse_name": "Karjat-Navnath Ragunath Shinde",
+            "warehouse_code": "W0003",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00029",
+            "sapling_item_name": "Mango ( Grafted - Kesar)",
+            "warehouse_name": "Karjat-Navnath Ragunath Shinde",
+            "warehouse_code": "W0003",
+            "sum_sapling_inward": "900",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00029",
+            "sapling_item_name": "Mango ( Grafted - Kesar)",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "400",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        },
+        {
+            "sapling_item_code": "S00042",
+            "sapling_item_name": "Sitafal\n( Golden)",
+            "warehouse_name": "Ambad-Govind Ashok kumar Lahoti",
+            "warehouse_code": "W0006",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "0"
+        }
+    ],
+    "sapling_stock_res_by_sapling": [
+        {
+            "sapling_item_code": "S00001",
+            "sapling_item_name": "Ain",
+            "sum_sapling_inward": "5000",
+            "sum_sapling_outward": "560",
+            "sapling_balance_stock": "4440"
+        },
+        {
+            "sapling_item_code": "S00002",
+            "sapling_item_name": "Arjun",
+            "sum_sapling_inward": "10",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "10"
+        },
+        {
+            "sapling_item_code": "S00004",
+            "sapling_item_name": "Awala (Grafted)",
+            "sum_sapling_inward": "20",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "20"
+        },
+        {
+            "sapling_item_code": "S00005",
+            "sapling_item_name": "Babhul",
+            "sum_sapling_inward": "300",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "300"
+        },
+        {
+            "sapling_item_code": "S00007",
+            "sapling_item_name": "Bakul",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "160",
+            "sapling_balance_stock": "440"
+        },
+        {
+            "sapling_item_code": "S00008",
+            "sapling_item_name": "Bamboo",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "360",
+            "sapling_balance_stock": "140"
+        },
+        {
+            "sapling_item_code": "S00010",
+            "sapling_item_name": "Bhendi",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "600"
+        },
+        {
+            "sapling_item_code": "S00012",
+            "sapling_item_name": "Chikku",
+            "sum_sapling_inward": "63",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "63"
+        },
+        {
+            "sapling_item_code": "S00013",
+            "sapling_item_name": "Chincha",
+            "sum_sapling_inward": "559",
+            "sum_sapling_outward": "50",
+            "sapling_balance_stock": "509"
+        },
+        {
+            "sapling_item_code": "S00014",
+            "sapling_item_name": "Chincha (Grafted)",
+            "sum_sapling_inward": "650",
+            "sum_sapling_outward": "10",
+            "sapling_balance_stock": "640"
+        },
+        {
+            "sapling_item_code": "S00015",
+            "sapling_item_name": "Dalimb",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "100",
+            "sapling_balance_stock": "500"
+        },
+        {
+            "sapling_item_code": "S00016",
+            "sapling_item_name": "Drumstick (Koimb)",
+            "sum_sapling_inward": "1700",
+            "sum_sapling_outward": "150",
+            "sapling_balance_stock": "1550"
+        },
+        {
+            "sapling_item_code": "S00017",
+            "sapling_item_name": "Drumstick (ODC)",
+            "sum_sapling_inward": "600",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "600"
+        },
+        {
+            "sapling_item_code": "S00018",
+            "sapling_item_name": "Jamun",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "250",
+            "sapling_balance_stock": "250"
+        },
+        {
+            "sapling_item_code": "S00021",
+            "sapling_item_name": "Kaduneem",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "50",
+            "sapling_balance_stock": "450"
+        },
+        {
+            "sapling_item_code": "S00029",
+            "sapling_item_name": "Mango ( Grafted - Kesar)",
+            "sum_sapling_inward": "1300",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "1300"
+        },
+        {
+            "sapling_item_code": "S00042",
+            "sapling_item_name": "Sitafal\n( Golden)",
+            "sum_sapling_inward": "500",
+            "sum_sapling_outward": "0",
+            "sapling_balance_stock": "500"
+        }
+    ]
+}
