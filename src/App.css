@@ -1,25 +1,6 @@
 .App {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
-.table-container {
-  margin: 20px auto;
-  width: 90%;
-}
 
-.saplings-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.saplings-table th,
-.saplings-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-.saplings-table th {
-  background-color: #f2f2f2;
-  text-align: left;
-}

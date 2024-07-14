@@ -4,6 +4,7 @@ import './MergedData.css';
 
 const MergedData = () => {
     const [mergedData, setMergedData] = useState([]);
+    const [saplingNames, setSaplingNames] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -14,36 +15,30 @@ const MergedData = () => {
                 const saplingsMaster = saplingsMasterResponse.data;
                 const saplingInwardOutward = saplingInwardOutwardResponse.data;
 
+                // Extract sapling names from saplings_master.json
+                const saplingNames = saplingsMaster.map(sapling => sapling.saplings_name);
+                setSaplingNames(saplingNames);
+
                 const saplingsDict = saplingsMaster.reduce((acc, sapling) => {
-                    acc[sapling.saplings_code] = sapling;
+                    acc[sapling.saplings_code] = sapling.saplings_name;
                     return acc;
                 }, {});
 
-                const mergedDataByWarehouse = saplingInwardOutward.sapling_stock_res_by_warehouse.map(stock => {
-                    const saplingInfo = saplingsDict[stock.sapling_item_code];
-                    return {
-                        saplings_name: saplingInfo.saplings_name,
-                        saplings_code: saplingInfo.saplings_code,
-                        warehouse_name: stock.warehouse_name,
-                        warehouse_code: stock.warehouse_code,
+                // Group data by warehouse
+                const mergedDataByWarehouse = saplingInwardOutward.sapling_stock_res_by_warehouse.reduce((acc, stock) => {
+                    if (!acc[stock.warehouse_name]) {
+                        acc[stock.warehouse_name] = { warehouse_code: stock.warehouse_code, saplings: {} };
+                    }
+                    const saplingName = saplingsDict[stock.sapling_item_code];
+                    acc[stock.warehouse_name].saplings[saplingName] = {
                         sum_sapling_inward: stock.sum_sapling_inward,
                         sum_sapling_outward: stock.sum_sapling_outward,
                         sapling_balance_stock: stock.sapling_balance_stock
                     };
-                });
+                    return acc;
+                }, {});
 
-                const mergedDataBySapling = saplingInwardOutward.sapling_stock_res_by_sapling.map(stock => {
-                    const saplingInfo = saplingsDict[stock.sapling_item_code];
-                    return {
-                        saplings_name: saplingInfo.saplings_name,
-                        saplings_code: saplingInfo.saplings_code,
-                        sum_sapling_inward: stock.sum_sapling_inward,
-                        sum_sapling_outward: stock.sum_sapling_outward,
-                        sapling_balance_stock: stock.sapling_balance_stock
-                    };
-                });
-
-                setMergedData([...mergedDataByWarehouse, ...mergedDataBySapling]);
+                setMergedData(Object.entries(mergedDataByWarehouse));
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -54,29 +49,33 @@ const MergedData = () => {
 
     return (
         <div className="merged-data-container">
-            <h1>Sapling Inventory</h1>
-            <table>
+            <h2>Sapling stock by warehouse</h2>
+            <table className="sapling-table">
                 <thead>
                     <tr>
-                        <th>Saplings Name</th>
-                        <th>Saplings Code</th>
-                        <th>Warehouse Name</th>
-                        <th>Warehouse Code</th>
-                        <th>Sum Sapling Inward</th>
-                        <th>Sum Sapling Outward</th>
-                        <th>Sapling Balance Stock</th>
+                        <th>WAREHOUSE NAME</th>
+                        {saplingNames.map((saplingName, index) => (
+                            <th key={index}>{saplingName}</th>
+                        ))}
                     </tr>
                 </thead>
                 <tbody>
-                    {mergedData.map((data, index) => (
+                    {mergedData.map(([warehouseName, warehouseData], index) => (
                         <tr key={index}>
-                            <td>{data.saplings_name}</td>
-                            <td>{data.saplings_code}</td>
-                            <td>{data.warehouse_name || '-'}</td>
-                            <td>{data.warehouse_code || '-'}</td>
-                            <td>{data.sum_sapling_inward}</td>
-                            <td>{data.sum_sapling_outward}</td>
-                            <td>{data.sapling_balance_stock}</td>
+                            <td>{warehouseName}</td>
+                            {saplingNames.map((saplingName, index) => {
+                                const saplingData = warehouseData.saplings[saplingName] || {};
+                                return (
+                                    <td key={index}>
+                                        <div className="stock-info">Total Stock: {saplingData.sum_sapling_inward || 0}</div>
+                                        <div className="stock-info">Total Distribute: {saplingData.sum_sapling_outward || 0}</div>
+                                        <div className={`balance-stock ${saplingData.sapling_balance_stock > 0 ? 'positive' : 'negative'}`}>
+                                            Balance Stock:
+                                             {saplingData.sapling_balance_stock || 0}
+                                        </div>
+                                    </td>
+                                );
+                            })}
                         </tr>
                     ))}
                 </tbody>
