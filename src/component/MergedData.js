@@ -50,36 +50,46 @@ const MergedData = () => {
     return (
         <div className="merged-data-container">
             <h2>Sapling stock by warehouse</h2>
-            <table className="sapling-table">
-                <thead>
-                    <tr>
-                        <th>WAREHOUSE NAME</th>
-                        {saplingNames.map((saplingName, index) => (
-                            <th key={index}>{saplingName}</th>
-                        ))}
-                    </tr>
-                </thead>
-                <tbody>
-                    {mergedData.map(([warehouseName, warehouseData], index) => (
-                        <tr key={index}>
-                            <td>{warehouseName}</td>
-                            {saplingNames.map((saplingName, index) => {
-                                const saplingData = warehouseData.saplings[saplingName] || {};
-                                return (
-                                    <td key={index}>
-                                        <div className="stock-info">Total Stock: {saplingData.sum_sapling_inward || 0}</div>
-                                        <div className="stock-info">Total Distribute: {saplingData.sum_sapling_outward || 0}</div>
-                                        <div className={`balance-stock ${saplingData.sapling_balance_stock > 0 ? 'positive' : 'negative'}`}>
-                                            Balance Stock:
-                                             {saplingData.sapling_balance_stock || 0}
-                                        </div>
-                                    </td>
-                                );
-                            })}
+            <div className="table-wrapper">
+                <table className="sapling-table">
+                    <thead>
+                        <tr>
+                            <th rowSpan="2" className="sticky-col">WAREHOUSE NAME</th>
+                            {saplingNames.map((saplingName, index) => (
+                                <th key={index} colSpan="3">{saplingName}</th>
+                            ))}
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                        <tr>
+                            {saplingNames.map((_, index) => (
+                                <React.Fragment key={`subheader-${index}`}>
+                                    <th>Total Stock</th>
+                                    <th>Total Distribute</th>
+                                    <th>Balance Stock</th>
+                                </React.Fragment>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {mergedData.map(([warehouseName, warehouseData], index) => (
+                            <tr key={index}>
+                                <td className="sticky-col">{warehouseName}</td>
+                                {saplingNames.map((saplingName, index) => {
+                                    const saplingData = warehouseData.saplings[saplingName] || {};
+                                    return (
+                                        <React.Fragment key={index}>
+                                            <td>{saplingData.sum_sapling_inward || 0}</td>
+                                            <td>{saplingData.sum_sapling_outward || 0}</td>
+                                            <td className={`balance-stock ${saplingData.sapling_balance_stock > 0 ? 'positive' : 'negative'}`}>
+                                                {saplingData.sapling_balance_stock || 0}
+                                            </td>
+                                        </React.Fragment>
+                                    );
+                                })}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 };
